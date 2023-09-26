@@ -44,4 +44,23 @@ header h1{
     border: solid black 1px;
 }
 
-/* Alteramos as cores de fundo dos respectivos filhos, conforme pede o enunciado */
+/* Alteramos as cores de fundo dos respectivos filhos e a borda sólida, conforme pede o enunciado */
+
+#pixel-board{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 10px;
+}
+
+.pixel{
+    border: 1px solid black;
+    padding: 20px;
+    width: 40px;
+    margin: 20px;
+    height: 40px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+/* Montamos a grade de quadrados */
