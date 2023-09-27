@@ -24,28 +24,28 @@ header h1{
 /* Fizemos as cores ficarem alinhadas, separadas e mais para baixo */
 
 .color:nth-child(1) {
-    background-color: black;
     color: white;
     border: solid black 1px;
     cursor: pointer;
+    color: black;
 }
 
 .color:nth-child(2) {
-    background-color: red;
     border: solid black 1px;
     cursor: pointer;
+    color: red;
 }
 
 .color:nth-child(3) {
-    background-color: blue;
     border: solid black 1px;
     cursor: pointer;
+    color: blue;
 }
 
 .color:nth-child(4) {
-    background-color: green;
     border: solid black 1px;
     cursor: pointer;
+    color: green;
 }
 
 /* Alteramos as cores de fundo dos respectivos filhos e a borda sólida, conforme pede o enunciado */
@@ -64,7 +64,6 @@ header h1{
     margin: 20px;
     height: 40px;
     margin-top: 50px;
-    background-color: white;
 }
 
 /* Montamos a grade de quadrados */
