@@ -60,5 +60,7 @@ pixels.forEach(pixel => {
   pixel.addEventListener('click', paintPixel);
 });
 
+// ------ Estudar últimas alterações ------
+
 
 
