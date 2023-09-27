@@ -10,6 +10,8 @@ trocaFundoazul.style.backgroundColor = 'blue';
 const trocaFundoVerde= document.getElementById("corVerde")
 trocaFundoVerde.style.backgroundColor = 'green';
 
+
+
 // ------------------- puxei e alterei os background (paleta e pixel) pelo js -------------------
 
 
