@@ -1,24 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const colors = document.querySelectorAll('#color-palette');
-  const canvasSquares = document.querySelectorAll('.pixel');
-
-  let selectedColor = null;
-
-  // Adiciona o evento de clique para cada quadrado de cor
-  for (let i = 0; i < colors.length; i++) {
-    colors[i].addEventListener('click', function() {
-      selectedColor = colors[i].style.backgroundColor;
-    });
+// Função para selecionar uma cor na paleta
+function selecionarCor(elemento) {
+  // Remove a classe 'selected' de todas as cores
+  const cores = document.querySelectorAll('.color');
+  for (let i = 0; i < cores.length; i++) {
+      cores[i].classList.remove('selected');
   }
 
-  // Adiciona o evento de clique para cada quadrado no canvas
-  for (let i = 0; i < canvasSquares.length; i++) {
-    canvasSquares[i].addEventListener('click', function() {
-      if (selectedColor) {
-        canvasSquares[i].style.backgroundColor = selectedColor;
-      } else {
-        alert('Selecione uma cor antes de pintar o quadrado.');
-      }
-    });
-  }
-});
+  // Adiciona a classe 'selected' à cor clicada
+  elemento.classList.add('selected');
+}
+
+// Adiciona um evento de clique a cada cor na paleta
+const coresPaleta = document.querySelectorAll('.color');
+for (let i = 0; i < coresPaleta.length; i++) {
+  const cor = coresPaleta[i];
+  cor.addEventListener('click', function() {
+      selecionarCor(cor);
+  });
+}
