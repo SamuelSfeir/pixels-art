@@ -64,8 +64,12 @@ header h1{
     background-color: white;
 }
 
-/* Ajusta a posição do botão */
+/* Ajusta a posição dos botões */
 #clear-board{
     margin-top: 40px;
     margin-left: 50px;
+}
+
+.buttons button{
+    margin: 0 47px;
 }
