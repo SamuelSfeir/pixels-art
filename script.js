@@ -54,7 +54,7 @@ function paintPixel(event) {
   // ---- Requisito 7 ------
 
   const indicePixel = Array.from(pixelsDom).indexOf(pixel); // Obtem o índice do pixel na lista de pixels
-  localStorage.setItem(`pixelBoard`, selectedColor) // Salva no local storage
+  localStorage.setItem(`pixel-${indicePixel}`, selectedColor) // Salva no local storage
 
   // ---- Requisito 7 ------
 }
@@ -104,7 +104,7 @@ botaoAleatorio.addEventListener('click', randomizarCoresNaPaleta);
 function carregarHistoricoPixelsDoLocalStorage() {
   const pixelsDom = document.querySelectorAll('.pixel');
   pixelsDom.forEach((pixel, indice) => {
-    const corSalva = localStorage.getItem(`pixelBoard`);
+    const corSalva = localStorage.getItem(`pixel-${indice}`);
     if (corSalva) {
       pixel.style.backgroundColor = corSalva;
     }
@@ -117,7 +117,7 @@ pixelsDom.forEach(pixel => {
     paintPixel(event);
     // Salvar no localStorage cada vez que um pixel é pintado
     const indicePixel = Array.from(pixelsDom).indexOf(event.target);
-    localStorage.setItem(`pixelBoard`, selectedColor);
+    localStorage.setItem(`pixel-${indicePixel}`, selectedColor);
   });
 });
 
