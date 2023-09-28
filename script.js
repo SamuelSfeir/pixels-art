@@ -1,3 +1,5 @@
+
+// ------------------- puxa os elementos do DOM -------------------
 const trocaFundoPreto = document.getElementById("corPreta")
 trocaFundoPreto.style.backgroundColor = 'black';
 
@@ -10,9 +12,9 @@ trocaFundoazul.style.backgroundColor = 'blue';
 const trocaFundoVerde= document.getElementById("corVerde")
 trocaFundoVerde.style.backgroundColor = 'green';
 
+const chamaButton = document.getElementById("clear-board")
 
-
-// ------------------- puxei e alterei os background (paleta e pixel) pelo js -------------------
+const pixelsDom = document.querySelectorAll('.pixel');
 
 
 // Função para selecionar uma cor na paleta
@@ -27,7 +29,7 @@ function selecionarCor(elemento) {
   elemento.classList.add('selected');
 }
 
-// Adiciona um evento de clique a cada cor na paleta
+// Adiciona um evento de clique a cada cor na paleta de cores
 const coresPaleta = document.querySelectorAll('.color');
 for (let i = 0; i < coresPaleta.length; i++) {
   const cor = coresPaleta[i];
@@ -37,19 +39,9 @@ for (let i = 0; i < coresPaleta.length; i++) {
   });
 }
 
-// funcao:
-// passar pelos pixels
-// for
-//   if selected passar o background do selecionado pro pixel clicado (style.backgroundcolor)
-//     event.target
+let selectedColor = 'black'; // cor padrão
 
-
-//   olhar o metodo getComputedStyle
-
-
-let selectedColor = 'black'; // Default color
-
-// Function to handle pixel click event
+// Função para lidar com o pixel click event
 function paintPixel(event) {
   const pixel = event.target;
   pixel.style.backgroundColor = selectedColor;
@@ -60,7 +52,17 @@ pixels.forEach(pixel => {
   pixel.addEventListener('click', paintPixel);
 });
 
-// ------ Estudar últimas alterações ------
+// ------ Fim do resquisito 4 ------
+
+// ------ Início do requisito 5 ------ 
+
+chamaButton.addEventListener('click', () => {
+  pixelsDom.forEach(pixel => {
+    pixel.style.backgroundColor = 'white';
+  });
+});
+  
+
 
 
 

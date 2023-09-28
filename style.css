@@ -1,17 +1,16 @@
+/* Resetamos o css */
 *{ 
     margin: 0;
     padding: 0;
 }
 
-/* Resetamos o css */
-
+/* Coloca o título no centro e mais para baixo */
 header h1{
     margin-top: 15px;
     text-align: center;
 }
 
-/* Colocamos o título no centro e colocamos ele mais para baixo */
-
+/* Faz as cores ficarem alinhadas, separadas e mais para baixo */
 #color-palette{
     display: flex;
 }
@@ -21,8 +20,7 @@ header h1{
     margin-top: 30px;
 }
 
-/* Fizemos as cores ficarem alinhadas, separadas e mais para baixo */
-
+/* Altera as cores de fundo dos respectivos filhos e a borda sólida */
 .color:nth-child(1) {
     color: white;
     border: solid black 1px;
@@ -48,8 +46,7 @@ header h1{
     color: green;
 }
 
-/* Alteramos as cores de fundo dos respectivos filhos e a borda sólida, conforme pede o enunciado */
-
+/* Monta a grade de quadrados */
 #pixel-board{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -67,4 +64,8 @@ header h1{
     background-color: white;
 }
 
-/* Montamos a grade de quadrados */
+/* Ajusta a posição do botão */
+#clear-board{
+    margin-top: 40px;
+    margin-left: 50px;
+}
