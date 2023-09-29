@@ -88,6 +88,10 @@ header h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+#pixel-board:hover {
+    background-color: #e0e0e0; /* Cor do fundo ao passar o mouse */
+}
+
 .pixel {
     border: 2px solid black; /* Aumentei a espessura da borda */
     width: 50px; /* Aumentei um pouco o tamanho do pixel */
