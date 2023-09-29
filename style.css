@@ -78,10 +78,14 @@ header h1 {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     margin: 20px; /* Ajustei a margem para dar mais espaçamento ao redor do grid */
-    gap: 15px; /* Reduzindo o espaçamento entre os pixels */
+    gap: 1px; /* Reduzindo o espaçamento entre os pixels */
     justify-content: center;
     align-items: center;
-    grid-column-gap:initial;
+    column-gap: 1px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .pixel {
@@ -93,7 +97,10 @@ header h1 {
     font-weight: bold; /* Deixei o texto em negrito */
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 
 
 /* Ajusta a posição dos botões */
