@@ -131,7 +131,7 @@ header h1 {
 }
 .buttons button:hover {
     background-color:#f0f0f0; /* Cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .buttons {
