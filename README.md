@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto
 
-Este projeto é uma simples ferramenta interativa que permite aos usuários escolher uma cor da paleta de cores e, em seguida, pintar pixels na tela usando a cor selecionada. É uma forma criativa e divertida de criar desenhos e padrões pixelizados.
+Este projeto é uma ferramenta interativa que permite aos usuários escolher uma cor da paleta de cores e, em seguida, pintar pixels na tela usando a cor selecionada. É uma forma criativa e divertida de criar desenhos e padrões pixelizados.
 
 ## Funcionalidades Principais
 
