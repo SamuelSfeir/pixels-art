@@ -4,7 +4,7 @@
 <details>
   <summary>English :us: </summary>
   
-  # Color Palette and Pixel Painting
+# Color Palette and Pixel Painting
 
 ## Project description
 
